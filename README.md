@@ -29,3 +29,38 @@ SELECT count(*) tables, table_schema,concat(round(sum(table_rows)/1000000,2),'M'
 ```
 SELECT table_name, table_rows, data_length, index_length, round(((data_length + index_length) / 1024 / 1024),2) "Size(MB)" FROM information_schema.TABLES WHERE table_schema = "DB-NAME";
 ```
+
+## lvm
+```
+reduce lvm partition (root-partition):
+
+1. rescue system booten und vg-root nicht mounten
+
+2. ext3 partition checken:
+e2fsck -f /dev/mapper/vg-root
+
+3. dateisystem verkleinern, allerdings kleiner als wunschgröße - 120G - soll 150G werden
+resize2fs -p /dev/mapper/vg-root 120G
+
+4. lvm verkleinern, auf entgültige größe
+lvreduce --size 150G /dev/mapper/vg0-root
+
+5. ext3 wieder erweitern (130->150)
+resize2fs /dev/mapper/vg0-root
+
+=reboot
+
+6. weitere data partition anlegen
+lvcreate -l 100%FREE -n data2 /dev/vg0/data2
+oder
+lvcreate -l 100%FREE -n data2
+oder
+lvcreate -l 100%FREE /dev/vg0/data2 -n data2
+
+7. data2 formatieren
+
+orig:
+http://wiki.linuxquestions.org/wiki/Lvreduce
+
+lvextend -l +100%FREE /dev/vg00/media
+```
