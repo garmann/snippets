@@ -64,3 +64,16 @@ http://wiki.linuxquestions.org/wiki/Lvreduce
 
 lvextend -l +100%FREE /dev/vg00/media
 ```
+
+## postgres
+- list databases \l
+- quit promt \q
+- show replication state:
+```
+select * from pg_stat_replication;
+```
+- more stuff: https://www.postgresql.org/docs/9.6/static/monitoring-stats.html
+- check for master/slave role: 
+```
+SELECT pg_is_in_recovery();
+```
