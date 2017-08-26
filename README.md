@@ -68,6 +68,7 @@ lvextend -l +100%FREE /dev/vg00/media
 ## postgres
 - list databases \l
 - quit promt \q
+- show all tables \dt
 - show replication state:
 ```
 select * from pg_stat_replication;
@@ -76,4 +77,10 @@ select * from pg_stat_replication;
 - check for master/slave role: 
 ```
 SELECT pg_is_in_recovery();
+t means true -> instance is in recovery
+f means false -> instanace is not in recovery
+```
+- run commands from shell with one row per line
+```
+psql -c '\x' -c 'select * from bla'
 ```
