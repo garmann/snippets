@@ -84,3 +84,18 @@ f means false -> instanace is not in recovery
 ```
 psql -c '\x' -c 'select * from bla'
 ```
+- connections
+```
+psql -c 'select * from pg_stat_activity'
+```
+
+## intellij
+keyboard shortcuts with puppet plugin(MAC):
+- COMMAND + SHIFT + F
+- Double SHIFT
+- COMMAND + O go to class
+- COMMAND + SHIFT + O go to file
+- COMMAND + ALT + O go to symbol
+- COMMAND + 1 project view
+- COMMAND + KeyUP navigation bar
+> works with marked code or copy pasta
