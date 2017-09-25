@@ -101,6 +101,6 @@ keyboard shortcuts with puppet plugin(MAC):
 > works with marked code or copy pasta
 
 
-# base64
+## base64
 - echo -n "bla" | base64 # -n is important and should be used
 - echo "output of first command" | base64 --decode
