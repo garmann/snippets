@@ -109,3 +109,4 @@ keyboard shortcuts with puppet plugin(MAC):
 - search and replcae: command + option + f
 - find in files: command + shift + f
 - multi edit: click + command (repeat) => edit
+- multi select (search for string): command + d
