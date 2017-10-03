@@ -4,7 +4,7 @@
 to build a better dashboard with assigned to me filter (only open issues):
 - create a new search and save it:
 ```
-status != Done and assignee = currentUser()
+status != Closed and status != Resolved and status != Done and assignee = currentUser()
 ```
 - add saved filter to your dashbard as a filter resultset
 
