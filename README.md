@@ -110,3 +110,11 @@ keyboard shortcuts with puppet plugin(MAC):
 - find in files: command + shift + f
 - multi edit: click + command (repeat) => edit
 - multi select (search for string): command + d
+
+## curl
+- no ssl validation: -k n
+- Host Header or Headers in general: --header 'Host: bla.com'
+
+## httpie
+- no ssl validation: --verify=no 
+- Host Header or Headers in general: Host: bla.com
