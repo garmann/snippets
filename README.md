@@ -100,6 +100,7 @@ keyboard shortcuts with puppet plugin(MAC):
 - COMMAND + KeyUP navigation bar
 > works with marked code or copy pasta
 - COMMAND + SHIFT + UP/DOWN to move a line
+- COMMAND + Backspace: delete line
 
 
 ## base64
