@@ -99,6 +99,7 @@ keyboard shortcuts with puppet plugin(MAC):
 - COMMAND + 1 project view
 - COMMAND + KeyUP navigation bar
 > works with marked code or copy pasta
+- COMMAND + SHIFT + UP/DOWN to move a line
 
 
 ## base64
