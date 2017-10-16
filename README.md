@@ -101,6 +101,7 @@ keyboard shortcuts with puppet plugin(MAC):
 > works with marked code or copy pasta
 - COMMAND + SHIFT + UP/DOWN to move a line
 - COMMAND + Backspace: delete line
+- Mouse hover; Command + B: jump to declaration
 
 
 ## base64
