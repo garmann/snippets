@@ -90,7 +90,7 @@ psql -c 'select * from pg_stat_activity'
 ```
 
 ## intellij
-keyboard shortcuts with puppet plugin(MAC):
+keyboard shortcuts with puppet, python plugin(MAC):
 - COMMAND + SHIFT + F
 - Double SHIFT
 - COMMAND + O go to class
