@@ -88,8 +88,9 @@ psql -c '\x' -c 'select * from bla'
 ```
 psql -c 'select * from pg_stat_activity'
 ```
-- pql connection test
+- psql connection test
 ```
+/usr/pgsql-9.6/bin/psql DB? -U USER -h IP -p PORT
 /usr/pgsql-9.6/bin/psql DB? -U USER -h IP -p PORT -c 'SELECT pg_is_in_recovery();
 ```
 
