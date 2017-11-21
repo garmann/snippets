@@ -68,6 +68,7 @@ lvextend -l +100%FREE /dev/vg00/media
 ## postgres
 - list databases \l
 - quit promt \q
+- switch database \c <dbname>
 - show all tables \dt
 - show replication state:
 ```
