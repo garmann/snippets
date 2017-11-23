@@ -127,3 +127,6 @@ keyboard shortcuts with puppet, python plugin(MAC):
 ## httpie
 - no ssl validation: --verify=no 
 - Host Header or Headers in general: Host: bla.com
+
+## minikube 
+- enable ingress ```minikube addons enable ingress```
