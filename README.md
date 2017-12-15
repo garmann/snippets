@@ -137,4 +137,4 @@ keyboard shortcuts with puppet, python plugin(MAC):
 command + ,
 ```
 - config options:
--- 1
+  - 1
