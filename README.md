@@ -137,11 +137,12 @@ keyboard shortcuts with puppet, python plugin(MAC):
 command + ,
 ```
 - config options:
-  - font settings:```
+  - font settings:
+  ```
     "window.zoomLevel": 0,
     "editor.fontSize": 13,
     "editor.lineHeight": 18,
-```
+  ```
   - disable minimap:```
     "editor.minimap.enabled": false,
 ```
