@@ -70,6 +70,7 @@ lvextend -l +100%FREE /dev/vg00/media
 - quit promt \q
 - switch database \c $dbname
 - show all tables \dt
+- show table definition \d
 - show replication state:
 ```
 select * from pg_stat_replication;
