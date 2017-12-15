@@ -137,4 +137,33 @@ keyboard shortcuts with puppet, python plugin(MAC):
 command + ,
 ```
 - config options:
-  - 1
+  - font settings:```
+    "window.zoomLevel": 0,
+    "editor.fontSize": 13,
+    "editor.lineHeight": 18,
+  ```
+  - disable minimap:```
+    "editor.minimap.enabled": false,
+  ```
+  - disable bad coloring in status bar:```
+    {
+      "statusBar.background" : "#303030",
+      "statusBar.noFolderBackground" : "#222225",
+      "statusBar.debuggingBackground": "#511f1f"
+    }
+    ```
+  - python path:```
+  "python.pythonPath": "~/.../env-air/bin/python3",
+  ```
+  - gitlens:```
+      "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    }
+    ```
