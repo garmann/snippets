@@ -130,3 +130,9 @@ keyboard shortcuts with puppet, python plugin(MAC):
 
 ## minikube 
 - enable ingress ```minikube addons enable ingress```
+
+## vscode
+- open config
+```
+command + ,
+```
