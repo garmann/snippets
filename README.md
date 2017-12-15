@@ -142,10 +142,10 @@ command + ,
     "window.zoomLevel": 0,
     "editor.fontSize": 13,
     "editor.lineHeight": 18,
-  ```
+```
   - disable minimap:```
     "editor.minimap.enabled": false,
-  ```
+```
   - disable bad coloring in status bar:
   ```
     {
