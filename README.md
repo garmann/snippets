@@ -148,11 +148,12 @@ command + ,
 ```
 - disable bad coloring in status bar:
 ```
-    {
-      "statusBar.background" : "#303030",
-      "statusBar.noFolderBackground" : "#222225",
-      "statusBar.debuggingBackground": "#511f1f"
-    }
+  "workbench.colorCustomizations":
+  {
+    "statusBar.background" : "#303030",
+    "statusBar.noFolderBackground" : "#222225",
+    "statusBar.debuggingBackground": "#511f1f"
+  }
 ```
 - python path:
 ```
