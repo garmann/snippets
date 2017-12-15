@@ -95,6 +95,8 @@ psql -c 'select * from pg_stat_activity'
 /usr/pgsql-9.6/bin/psql DB? -U USER -h IP -p PORT
 /usr/pgsql-9.6/bin/psql DB? -U USER -h IP -p PORT -c 'SELECT pg_is_in_recovery();
 ```
+- show variables: \set
+- set variables: \set AUTOCOMMIT off
 
 ## intellij
 keyboard shortcuts with puppet, python plugin(MAC):
