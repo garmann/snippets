@@ -29,6 +29,15 @@ SELECT count(*) tables, table_schema,concat(round(sum(table_rows)/1000000,2),'M'
 ```
 SELECT table_name, table_rows, data_length, index_length, round(((data_length + index_length) / 1024 / 1024),2) "Size(MB)" FROM information_schema.TABLES WHERE table_schema = "DB-NAME";
 ```
+- set acid
+```
+SHOW VARIABLES LIKE 'innodb_flush_log_at_trx_commit';
+SET GLOBAL innodb_flush_log_at_trx_commit=0;
+read: 
+https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_flush_log_at_trx_commit
+there are different scopes: GLOBAL, session...
+do not forget to save the value to your configuration file
+```
 
 ## lvm
 ```
