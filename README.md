@@ -143,6 +143,8 @@ keyboard shortcuts with puppet, python plugin(MAC):
 - Host Header or Headers in general: Host: bla.com
 
 ## minikube 
+- start minikube: minikube start
+- dashboard (wait a minute after minikube start): minikube dashboard
 - enable ingress ```minikube addons enable ingress```
 
 ## vscode
