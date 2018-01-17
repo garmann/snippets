@@ -147,6 +147,9 @@ keyboard shortcuts with puppet, python plugin(MAC):
 - dashboard (wait a minute after minikube start): minikube dashboard
 - enable ingress ```minikube addons enable ingress```
 
+## ssl certs
+- show ssl cert details: openssl x509 -text -noout -in file.crt
+
 ## vscode
 - open config
 ```
