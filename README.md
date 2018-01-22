@@ -137,6 +137,9 @@ keyboard shortcuts with puppet, python plugin(MAC):
 ## curl
 - no ssl validation: -k n
 - Host Header or Headers in general: --header 'Host: bla.com'
+```
+curl --verbose --header 'Host: www.blablabla.com' 'http://ip:port/the_url_to_test'
+```
 
 ## httpie
 - no ssl validation: --verify=no 
