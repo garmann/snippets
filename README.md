@@ -194,3 +194,11 @@ command + ,
         "suppressWelcomeNotice": true
     }
 ```
+## elasticsearch
+```
+create:
+curl -X PUT -H'Content-Type: application/json' https://domain/index/doc/1?pretty -d '{"name":"greg bla"}'
+
+get:
+curl -H 'Content-Type: application/json' https://domain/index/doc/1?pretty
+```
