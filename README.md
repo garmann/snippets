@@ -108,6 +108,11 @@ psql -c 'select * from pg_stat_activity'
 ```
 - show variables: \set
 - set variables: \set AUTOCOMMIT off
+- dump handling:
+```
+pg_dump --no-owner -U $user -p $port -h $host $database > $database.psql
+psql $datenbank -U $newuser -p $port -h $host < $database.sql
+```
 
 ## intellij
 keyboard shortcuts with puppet, python plugin(MAC):
