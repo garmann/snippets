@@ -20,6 +20,20 @@ word jumping with cursor
   - Shortcut: alt + right
   - Action: Send Escape Sequence
   - Esc+: f
+  
+## jq on cloudtrail logs
+- how many requests on route53, per second
+```
+jq '.Records[] |select (.eventSource == "route53.amazonaws.com")' |jq -s 'sort_by(.eventTime) |.[].eventTime' | uniq -c|sort -n -r
+```
+- filter route53 requets, show some fields, sorted by time
+```
+jq '.Records[] |select (.eventSource == "route53.amazonaws.com") |{eventTime, eventName, userIdentity, requestParameters}' |jq -s 'sort_by(.eventTime)'
+```
+- show route53 requests for specific time
+```
+jq '.Records[] |select (.eventSource == "route53.amazonaws.com")| select(.eventTime == "2018-06-05T15:42:59Z")'
+```
 
 ## mysql
 - size of databases
