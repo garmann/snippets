@@ -232,3 +232,7 @@ aws --profile X route53 list-hosted-zones
 ```
 aws --profile X route53 list-resource-record-sets --hosted-zone-id X
 ```
+- view all the resource record sets of a particular name
+```
+aws route53 list-resource-record-sets --hosted-zone-id X --query "ResourceRecordSets[?Name == 'example.domain.']
+```
