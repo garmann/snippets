@@ -221,3 +221,14 @@ curl -X PUT -H'Content-Type: application/json' https://domain/index/doc/1?pretty
 get:
 curl -H 'Content-Type: application/json' https://domain/index/doc/1?pretty
 ```
+
+## aws cli
+*--profile X is your local aws config under ~/.aws if its non-default*
+- list hosted zones
+```
+aws --profile X route53 list-hosted-zones
+```
+- get records from hosted zone
+```
+aws --profile X route53 list-resource-record-sets --hosted-zone-id X
+```
