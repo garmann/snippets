@@ -237,6 +237,10 @@ aws --profile X route53 list-resource-record-sets --hosted-zone-id X
 aws route53 list-resource-record-sets --hosted-zone-id X --query "ResourceRecordSets[?Name == 'example.domain.']
 ```
 ## bluemix cli commands
+- list k8s clusters
+```
+ibmcloud cs clusters
+```
 - load kubectl config to local computer
 ```
 ibmcloud cs cluster-config $cluster-name
