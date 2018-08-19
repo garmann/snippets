@@ -152,12 +152,19 @@ keyboard shortcuts with puppet, python plugin(MAC):
 - find in files: command + shift + f
 - multi edit: click + command (repeat) => edit
 - multi select (search for string): command + d
+- multi select all: control + command + g
+- theme selector: theme menu switcher
+- cycle in tabs: option + command + left or right
+- split view: option + command + a number
+- split view vertical: option + command + shift + a number
+- move line(s): control + command + up or down
+
 
 ## curl
 - no ssl validation: -k n
 - Host Header or Headers in general: --header 'Host: bla.com'
 ```
-curl --verbose --header 'Host: www.blablabla.com' 'http://ip:port/the_url_to_test'
+curl -v --header 'Host: www.blablabla.com' 'http://ip:port/the_url_to_test'
 ```
 
 ## httpie
