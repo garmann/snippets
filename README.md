@@ -158,6 +158,16 @@ keyboard shortcuts with puppet, python plugin(MAC):
 - split view: option + command + a number
 - split view vertical: option + command + shift + a number
 - move line(s): control + command + up or down
+- exclude files from sidebar (user settings file): 
+```
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.pdb",
+		".DS_Store",
+	],
+```
 
 
 ## curl
