@@ -168,7 +168,15 @@ keyboard shortcuts with puppet, python plugin(MAC):
 		".DS_Store",
 	],
 ```
-
+- exclude folders from sidebar (user settings file): 
+```
+    [
+        "__pycache__",
+        ".git",
+        ".vscode",
+        ".ipynb_checkpoints",
+    ],
+```
 
 ## curl
 - no ssl validation: -k n
