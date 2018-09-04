@@ -170,11 +170,12 @@ keyboard shortcuts with puppet, python plugin(MAC):
 ```
 - exclude folders from sidebar (user settings file): 
 ```
+    "folder_exclude_patterns":
     [
-        "__pycache__",
-        ".git",
-        ".vscode",
-        ".ipynb_checkpoints",
+		"__pycache__",
+		".git",
+		".vscode",
+		".ipynb_checkpoints",
     ],
 ```
 
