@@ -247,7 +247,10 @@ terminal.integrated.copyOnSelection": true
 ```
 "editor.formatOnPaste": true
 ```
-
+- terminal lines history
+```
+"terminal.integrated.scrollback": 5000
+```
 ## elasticsearch
 ```
 create:
