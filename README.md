@@ -243,6 +243,11 @@ command + ,
 ```
 terminal.integrated.copyOnSelection": true
 ```
+- auto indent pasting
+```
+"editor.formatOnPaste": true
+```
+
 ## elasticsearch
 ```
 create:
