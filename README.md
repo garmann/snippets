@@ -239,6 +239,10 @@ command + ,
         "suppressWelcomeNotice": true
     }
 ```
+- copy on select:
+```
+terminal.integrated.copyOnSelection": true
+```
 ## elasticsearch
 ```
 create:
