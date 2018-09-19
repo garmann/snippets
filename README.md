@@ -291,3 +291,8 @@ ibmcloud cs albs --cluster $cluster-anem
 ```
 ibmcloud cs cluster-get $cluster-name
 ```
+## terraform & terragrunt 
+- clean terragrunt cache
+```
+find . -name '*.terraform' -prune -exec rm -rf {} \; && find . -name '*.terragrunt-cache' -prune -exec rm -rf {} \;
+```
