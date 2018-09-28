@@ -285,12 +285,17 @@ ibmcloud cs cluster-config $cluster-name
 ```
 - get alb ips overview
 ```
-ibmcloud cs albs --cluster $cluster-anem
+ibmcloud cs albs --cluster $cluster-name
 ```
 - get cluster informations
 ```
 ibmcloud cs cluster-get $cluster-name
 ```
+- activate cluster kubectl config for specific cluster
+```
+out=$(ibmcloud cs cluster-config $cluster-name --export -s); eval $out
+```
+
 ## terraform & terragrunt 
 - clean terragrunt cache
 ```
