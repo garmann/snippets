@@ -287,6 +287,10 @@ ibmcloud cs cluster-config $cluster-name
 ```
 ibmcloud cs albs --cluster $cluster-name
 ```
+- enable or disable albs
+```
+ibmcloud cs alb-configure --albID <albid> --enable or --disable
+```
 - get cluster informations
 ```
 ibmcloud cs cluster-get $cluster-name
