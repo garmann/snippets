@@ -278,6 +278,10 @@ aws route53 list-resource-record-sets --hosted-zone-id X --query "ResourceRecord
 ```
 aws sts get-caller-identity
 ```
+- bash completion for aws cli tool
+```
+https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html
+```
 ## bluemix cli commands
 - list k8s clusters
 ```
