@@ -274,6 +274,10 @@ aws --profile X route53 list-resource-record-sets --hosted-zone-id X
 ```
 aws route53 list-resource-record-sets --hosted-zone-id X --query "ResourceRecordSets[?Name == 'example.domain.']
 ```
+- view current account id and user which iam logged in with
+```
+aws sts get-caller-identity
+```
 ## bluemix cli commands
 - list k8s clusters
 ```
