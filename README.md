@@ -307,6 +307,15 @@ ibmcloud cs cluster-get $cluster-name
 ```
 out=$(ibmcloud cs cluster-config $cluster-name --export -s); eval $out
 ```
+- get all vlan informations from ibmcloud based on zoneid
+```
+ibmcloud ks vlans --zone <ZONE-STRING> --json -s | jq '[.[] | select (.type == "public") |select (.properties.name |contains("<SEARCHPATTERN-STRING>")) | .id]'
+```
+- get all subnet informations from ibmcloud based on vlanid
+```
+ibmcloud ks subnets --json -s |jq -c '[.[] |select(.vlan_id == "<VLANID-STRING>") | {vlan_id: .vlan_id, subnet_id: .id, range: .properties.display_label }]'
+```
+vlanid needs to be a string
 
 ## terraform & terragrunt 
 - clean terragrunt cache
