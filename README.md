@@ -239,6 +239,20 @@ command + ,
         "suppressWelcomeNotice": true
     }
 ```
+- keybindings.json
+```
+[{
+        "key": "cmd+y",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+y",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    }
+]
+```
 - copy on select:
 ```
 terminal.integrated.copyOnSelection": true
