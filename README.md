@@ -35,6 +35,15 @@ jq '.Records[] |select (.eventSource == "route53.amazonaws.com") |{eventTime, ev
 jq '.Records[] |select (.eventSource == "route53.amazonaws.com")| select(.eventTime == "2018-06-05T15:42:59Z")'
 ```
 
+## aws
+- get all sub accounts in aws org
+```
+aws organizations describe-organization
+aws organizations list-parents --child-id x
+aws organizations list-organizational-units-for-parent --parent-id y
+aws organizations list-accounts-for-parent --parent-id z
+```
+
 ## mysql
 - size of databases
 ```
