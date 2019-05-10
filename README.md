@@ -250,7 +250,8 @@ command + ,
 ```
 - keybindings.json
 ```
-[{
+[
+    {
         "key": "cmd+y",
         "command": "workbench.action.terminal.focus",
         "when": "editorTextFocus"
@@ -259,7 +260,16 @@ command + ,
         "key": "cmd+y",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
-    }
+    },
+    {
+        "key": "cmd+shift+k",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "cmd+shift+j",
+        "command": "workbench.action.terminal.focusPrevious"
+    },
+
 ]
 ```
 - copy on select:
