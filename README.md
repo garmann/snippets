@@ -355,3 +355,14 @@ vlanid needs to be a string
 ```
 find . -name '*.terraform' -prune -exec rm -rf {} \; && find . -name '*.terragrunt-cache' -prune -exec rm -rf {} \;
 ```
+- overwrite local module source
+```
+terragrunt apply --terragrunt-source /fullpath//tf-mod-x
+
+```
+
+## kubectl
+- forward remote port to local machine
+```
+kubectl port-forward -n namespace service/servicename 8080:8080
+```
