@@ -348,6 +348,10 @@ ibmcloud ks vlans --zone <ZONE-STRING> --json -s | jq '[.[] | select (.type == "
 ```
 ibmcloud ks subnets --json -s |jq -c '[.[] |select(.vlan_id == "<VLANID-STRING>") | {vlan_id: .vlan_id, subnet_id: .id, range: .properties.display_label }]'
 ```
+- get workers from kubernetes cluster, will also show worker internal and external ips + network zone
+```
+ibmcloud cs workers <name>
+```
 vlanid needs to be a string
 
 ## terraform & terragrunt 
