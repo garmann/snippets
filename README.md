@@ -284,6 +284,21 @@ terminal.integrated.copyOnSelection": true
 ```
 "terminal.integrated.scrollback": 5000
 ```
+- golang debug, dont cut off vars
+```
+"go.delveConfig": {
+  "useApiV1": false,
+  "dlvLoadConfig": {
+    "followPointers": true,
+    "maxVariableRecurse": 3,
+    "maxStringLen": 400,
+    "maxArrayValues": 400,
+    "maxStructFields": -1
+  }
+}
+```
+
+
 ## elasticsearch
 ```
 create:
