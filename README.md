@@ -297,7 +297,11 @@ terminal.integrated.copyOnSelection": true
   }
 }
 ```
-
+- settings for keeping tabs open after preview or single click to view (set to false)
+``` 
+workbench.editor.enablePreview
+workbench.editor.enablePreviewFromQuickOpen
+```
 
 ## elasticsearch
 ```
