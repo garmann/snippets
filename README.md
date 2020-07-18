@@ -392,3 +392,9 @@ terragrunt apply --terragrunt-source /fullpath//tf-mod-x
 ```
 kubectl port-forward -n namespace service/servicename 8080:8080
 ```
+
+## helm
+- render a helm template locally
+```
+helm template --values k8s/xyz/values.yaml --output-dir ./rendered k8s/xyz/ --set "image.tag=XXX" --set "x_environment=XXX"
+```
