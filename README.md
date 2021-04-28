@@ -302,6 +302,11 @@ terminal.integrated.copyOnSelection": true
 workbench.editor.enablePreview
 workbench.editor.enablePreviewFromQuickOpen
 ```
+- terminal rendering
+```
+"terminal.integrated.rendererType": "dom"
+"terminal.integrated.rendererType": "canvas"
+```
 
 ## elasticsearch
 ```
@@ -391,6 +396,16 @@ terragrunt apply --terragrunt-source /fullpath//tf-mod-x
 - forward remote port to local machine
 ```
 kubectl port-forward -n namespace service/servicename 8080:8080
+```
+- set namespace in context
+```
+kubectl config set-context --current --namespace=ingress-nginx
+```
+- alias for shell
+```
+alias k='kubectl'
+source <(kubectl completion bash)
+complete -F __start_kubectl k
 ```
 
 ## helm
