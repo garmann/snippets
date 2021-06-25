@@ -99,12 +99,16 @@ lvextend -l +100%FREE /dev/vg00/media
 ```
 
 ## postgres
-- list databases \l
+- list databases \l+
+- list schemas \dn+
+- show all relations \dt+
+- show cli commands: \\?
 - quit promt \q
-- switch database \c $dbname
-- show all tables \dt
-- import a file: \i filename
+- switch database \c <database>
+- import a file: \i <filename>
 - show table definition \d
+- switch cli view mode to per row: \x
+- remote connect: `psql -h <hostname> -U <username> -W -d <database>`
 - show replication state:
 ```
 select * from pg_stat_replication;
@@ -133,8 +137,20 @@ psql -c 'select * from pg_stat_activity'
 - set variables: \set AUTOCOMMIT off
 - dump handling:
 ```
-pg_dump --no-owner -U $user -p $port -h $host $database > $database.psql
-psql $datenbank -U $newuser -p $port -h $host < $database.sql
+pg_dump --no-owner -U <user> -p <port> -h <server> <database> > <database>.psql
+psql <database> -U <user> -p <port> -h <server> < <database>.sql
+```
+- example grants and users
+```
+# create user contains CONNECT right already, instead of role
+# creating a role is lacking CONNECT permission but this
+# allows managing users and granting access on role level
+# grants can also be done to roles instead of directly to users
+CREATE USER <username> WITH ENCRYPTED PASSWORD <password>
+GRANT ALL PRIVILEGES ON DATABASE <database> TO <username>;
+GRANT USAGE ON SCHEMA <schemaname> TO <username>;
+GRANT SELECT ON ALL TABLES IN SCHEMA <schemaname> TO <username>;
+GRANT ALL ON ALL TABLES IN SCHEMA <schemaname> TO <username>;
 ```
 
 ## intellij
