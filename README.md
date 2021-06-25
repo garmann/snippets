@@ -415,7 +415,7 @@ kubectl port-forward -n namespace service/servicename 8080:8080
 ```
 - set namespace in context
 ```
-kubectl config set-context --current --namespace=ingress-nginx
+kubectl config set-context --current --namespace=<namespacename>
 ```
 - alias for shell
 ```
@@ -423,7 +423,14 @@ alias k='kubectl'
 source <(kubectl completion bash)
 complete -F __start_kubectl k
 ```
-
+- all api types, also shows if namespace bound nand short name
+```
+kubectl api-resources
+```
+- all resources within scope
+```
+kubectl get all
+```
 ## helm
 - render a helm template locally
 ```
