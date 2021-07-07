@@ -421,6 +421,7 @@ kubectl config set-context --current --namespace=<namespacename>
 ```
 alias k='kubectl'
 alias kns='kubectl config set-context --current --namespace '
+alias kevent='kubectl get events --sort-by=.metadata.creationTimestamp'
 source <(kubectl completion bash)
 complete -F __start_kubectl k
 ```
