@@ -420,6 +420,7 @@ kubectl config set-context --current --namespace=<namespacename>
 - alias for shell
 ```
 alias k='kubectl'
+alias kns='kubectl config set-context --current --namespace '
 source <(kubectl completion bash)
 complete -F __start_kubectl k
 ```
