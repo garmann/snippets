@@ -433,6 +433,14 @@ kubectl api-resources
 ```
 kubectl get all
 ```
+- show kube contexts
+```
+kubectl config get-contexts		 
+```
+- activate kube contexts
+```
+kubectl config use-context <context-name>		 
+```
 ## helm
 - render a helm template locally
 ```
