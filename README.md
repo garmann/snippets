@@ -224,6 +224,7 @@ curl -v --header 'Host: www.blablabla.com' 'http://ip:port/the_url_to_test'
 - show ssl cert details: openssl x509 -text -noout -in file.crt
 
 ## vscode
+- tree indent: workbench -> tree -> indent => 16
 - open config
 ```
 command + ,
