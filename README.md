@@ -446,3 +446,11 @@ kubectl config use-context <context-name>
 ```
 helm template --values k8s/xyz/values.yaml --output-dir ./rendered k8s/xyz/ --set "image.tag=XXX" --set "x_environment=XXX"
 ```
+## kvm virsh
+- set memory and cpu via cli
+```
+virsh setvcpus <vmname> 4 --config --maximum
+virsh setvcpus <vmname> 4 --config 
+virsh setmaxmem <vmname> 12G --config
+virsh setmem <vmname> 12G --config
+```
