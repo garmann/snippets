@@ -455,3 +455,7 @@ virsh setvcpus <vmname> 4 --config
 virsh setmaxmem <vmname> 12G --config
 virsh setmem <vmname> 12G --config
 ```
+- add network interface
+```
+virsh attach-interface --domain <vmname> --type bridge --source br0 --model virtio --config --live
+```
