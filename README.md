@@ -442,6 +442,10 @@ kubectl config get-contexts
 ```
 kubectl config use-context <context-name>		 
 ```
+- get events with a nice timestamp
+```
+kubectl get events -o custom-columns=FirstSeen:.firstTimestamp,LastSeen:.lastTimestamp,Count:.count,From:.source.component,Type:.type,Reason:.reason,Message:.message --field-selector involvedObject.kind=Pod
+```
 ## helm
 - render a helm template locally
 ```
