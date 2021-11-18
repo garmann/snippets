@@ -446,6 +446,16 @@ kubectl config use-context <context-name>
 ```
 kubectl get events -o custom-columns=FirstSeen:.firstTimestamp,LastSeen:.lastTimestamp,Count:.count,From:.source.component,Type:.type,Reason:.reason,Message:.message --field-selector involvedObject.kind=Pod
 ```
+- CPU Requests
+```
+kubectl get po --all-namespaces \
+ -o=jsonpath="{range .items[*]}{.metadata.namespace}:{.metadata.name}{'\n'}{range .spec.containers[*]}  {.name}:{.resources.requests.cpu}{'\n'}{end}{'\n'}{end}"
+```
+- CPU Limits
+```
+kubectl get po --all-namespaces \
+ -o=jsonpath="{range .items[*]}{.metadata.namespace}:{.metadata.name}{'\n'}{range .spec.containers[*]}  {.name}:{.resources.limits.cpu}{'\n'}{end}{'\n'}{end}"
+```
 ## helm
 - render a helm template locally
 ```
