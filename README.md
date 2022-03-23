@@ -473,3 +473,9 @@ virsh setmem <vmname> 12G --config
 ```
 virsh attach-interface --domain <vmname> --type bridge --source br0 --model virtio --config --live
 ```
+
+## boto3
+- use a profile from local env
+```
+boto3.setup_default_session(profile=<profilename>)
+```
